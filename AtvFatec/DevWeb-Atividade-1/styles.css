@@ -1,0 +1,160 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.bckg-img{
+  background-image: url("images/fundo.png");
+  display: grid;
+  grid-template-columns: repeat(1fr, 1);
+  grid-template-areas:
+  'Head'
+  'Main'
+  'Foot';
+  row-gap: 1rem;
+}
+
+.Head {
+  grid-area: Head;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 3rem;
+  padding: 1rem;
+}
+
+.navBar{
+  display: flex;
+  flex-direction: row;
+  column-gap: 0.5rem;
+}
+
+.navBar > li{
+  list-style: none;
+}
+
+.principal {
+  grid-area: Main;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 0.5rem;
+}
+.sectImg{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imgMain{
+  width: 58.5%;
+  /* height: auto; */
+}
+
+.txtMain{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  row-gap: 1rem;
+}
+
+.txtTitle{
+  align-self: baseline;
+}
+
+.Foot {
+  grid-area: Foot;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+/* Sobre */
+.bckg-img2{
+  background-image: url("images/fundo2.png");
+  display: grid;
+  grid-template-columns: repeat(1fr, 1);
+  grid-template-areas:
+  'Head'
+  'Main'
+  'Foot';
+  row-gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.abtPrincipal{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.txtArt{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  row-gap: 1rem;
+}
+
+.txtSec1{
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+}
+
+.txtSec2{
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+}
+
+.listOrd{
+  padding-left: 2rem;
+}
+
+.txtTitle{
+  font-size: 1.7rem;
+}
+
+/* Contato */
+.contactPrincipal{
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+}
+
+.infosTxt{
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+}
+
+.forms{
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.3rem;
+}
+
+.inputArea{
+  max-width: 10rem;
+  min-height: 1.5rem;
+}
+
+.txtArea{
+  max-width: 15rem;
+  min-width: 10rem;
+  min-height: 2rem;
+  max-height: 5rem;
+}
+
+.envBtn{
+  width: 5rem;
+}
